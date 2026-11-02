@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "name": "TOKEN 超市行业资源 · 建筑 MCP 测试",
+  "categories": [
+    {
+      "id": "architecture",
+      "name": "建筑设计"
+    },
+    {
+      "id": "interior",
+      "name": "室内与景观"
+    },
+    {
+      "id": "engineering",
+      "name": "工程与制造"
+    },
+    {
+      "id": "office",
+      "name": "办公与行政"
+    },
+    {
+      "id": "software",
+      "name": "软件开发"
+    },
+    {
+      "id": "content",
+      "name": "内容与营销"
+    },
+    {
+      "id": "education",
+      "name": "教育与研究"
+    },
+    {
+      "id": "general",
+      "name": "通用工具"
+    }
+  ],
+  "resources": [
+    {
+      "id": "building-brief",
+      "name": "建筑设计需求整理",
+      "category": "architecture",
+      "kind": "skill",
+      "description": "把项目目标、使用人群、空间需求、面积单位、场地条件和待确认事项整理成一份设计任务清单。安装后在 Codex 新会话说：用建筑设计需求整理技能，帮我梳理这个项目。",
+      "requirements": "只整理用户提供的资料，不需要连接设计软件。此条为可安装的本地示例技能。",
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "directory": "skills/building-brief",
+      "skillName": "building-brief"
+    },
+    {
+      "id": "sketchup-mcp",
+      "name": "SU / SketchUp MCP",
+      "category": "architecture",
+      "kind": "mcp",
+      "description": "读取与修改 SketchUp 模型，创建几何、设置材质、变换对象、执行 Ruby 及保存模型。点击后从 GitHub 下载并安装所选 MCP、自带 Python 和配套 SU 扩展，保留原模型、API 及生图技能。",
+      "requirements": "仅 Windows x64；需已安装有许可的 SketchUp 桌面版，不支持网页版。先关闭 SketchUp；安装后重开 Codex 和 SketchUp，在扩展菜单启动 SketchUp MCP 的 Start Server（127.0.0.1:9876）。未检测到 SketchUp 时给出手动安装 RBZ 的路径；Ruby 脚本须在安装提示的项目目录内。当前 Mac/ARM64 无对应便携包。",
+      "platforms": [
+        "windows"
+      ],
+      "bundle": "cad-su-20261102",
+      "downloadURL": "https://github.com/seven-0911/token-market-resources/releases/download/industry-20261102/CAD-SU-Render-Toolkit-20261102-win-x64.zip"
+    },
+    {
+      "id": "cad-mcp",
+      "name": "CAD MCP",
+      "category": "architecture",
+      "kind": "mcp",
+      "description": "连接本机 CAD，读取或绘制图纸，管理实体、图层、块、文件及导出数据。点击后从 GitHub 下载并安装所选 MCP、自带 Python 与依赖；不安装 CAD 软件，不更改聊天或生图 API。",
+      "requirements": "仅 Windows x64；需已安装有许可且支持 COM 的 AutoCAD、中望 CAD、浩辰 CAD 或 BricsCAD。安装后重开 Codex，打开需要操作的图纸；CAD 与 Codex 使用同一个 Windows 用户及相同权限。当前 Mac/ARM64 无对应便携包。",
+      "platforms": [
+        "windows"
+      ],
+      "bundle": "cad-su-20261102",
+      "downloadURL": "https://github.com/seven-0911/token-market-resources/releases/download/industry-20261102/CAD-SU-Render-Toolkit-20261102-win-x64.zip"
+    },
+    {
+      "id": "meeting-actions",
+      "name": "会议纪要与任务整理",
+      "category": "office",
+      "kind": "skill",
+      "description": "把会议记录整理成决定事项、待办、负责人、截止时间和待确认问题。安装后在 Codex 新会话说：用会议纪要与任务整理技能处理这段记录。",
+      "requirements": "不需要额外软件。此条为可安装的本地示例技能。",
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "directory": "skills/meeting-actions",
+      "skillName": "meeting-actions"
+    }
+  ]
+}
